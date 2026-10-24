@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pendaftaran Kegiatan</title>
+    <link rel="stylesheet" href="daftar.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="Catalog.html">Catalog</a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="daftar.html" aria-current="page">Daftar</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Pendaftaran Kegiatan</h1>
+        <figure>
+            <img src="assets/Rinjani.jpg" alt="Lokasi kegiatan">
+        </figure>
+        <p>Pendaftaran Kegiatan.</p>
+
+        <form method="get">
+
+            <label for="nama">Nama lengkap (wajib)</label>
+            <p id="nama-help">Contoh: Budi Santoso.</p>
+            <input id="nama" name="nama" autocomplete="name" aria-describedby="nama-help" required>
+
+            <label for="telepon">Nomor telepon (wajib)</label>
+            <p id="telepon-help">Format: 08xxxxxxxxxx (10-13 digit).</p>
+            <input id="telepon" name="telepon" type="tel" autocomplete="tel" aria-describedby="telepon-help" required>
+
+            <label for="email">Email (wajib)</label>
+            <p id="email-help">Contoh: nama@email.com.</p>
+            <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-help" required>
+
+            <label for="prodi">Program studi (wajib)</label>
+            <select id="prodi" name="prodi" required>
+                <option value="">Pilih program studi</option>
+                <option value="trpl">D4 TRPL</option>
+                <option value="ti">D3 Teknologi Informasi</option>
+            </select>
+
+            <fieldset>
+                <legend>Mode kehadiran (wajib)</legend>
+
+                <input id="luring" name="mode" type="radio" value="luring" required>
+                <label for="luring">Luring</label>
+
+                <input id="daring" name="mode" type="radio" value="daring">
+                <label for="daring">Daring</label>
+            </fieldset>
+
+            <label for="kode">Kode peserta (6 angka, wajib)</label>
+            <p id="kode-help">Contoh: 001234. Gunakan tepat enam angka.</p>
+
+            <input id="kode" name="kode" type="text" pattern="[0-9]{6}" aria-describedby="kode-help" required>
+
+            <figure>
+                <img src="Naga.png" alt="Naga Khas Karanganyer">
+                <figcaption>Naga ini bisa muncul dimana sajaaaaaa.</figcaption>
+            </figure>
+
+            <label for="jumlah">Jumlah tiket (0-6, wajib)</label>
+            <input id="jumlah" name="jumlah" type="number" min="0" max="6" step="1" required>
+
+            <fieldset>
+                <legend>Topik yang diminati</legend>
+
+                <input id="html" name="topik" type="checkbox" value="html">
+                <label for="html">HTML</label>
+
+                <input id="aksesibilitas" name="topik" type="checkbox" value="aksesibilitas">
+                <label for="aksesibilitas">Aksesibilitas</label>
+            </fieldset>
+
+            <label for="catatan">Catatan (opsional)</label>
+            <textarea id="catatan" name="catatan" rows="4" maxlength="300"></textarea>
+
+            <button type="submit">Daftar</button>
+
+        </form>
+    </main>
+</body>
+
+</html>

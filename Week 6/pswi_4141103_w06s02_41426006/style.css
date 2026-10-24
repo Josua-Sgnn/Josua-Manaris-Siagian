@@ -1,0 +1,61 @@
+/* --- Pendekatan Mobile-First (Base / Layar Kecil 320px ke atas) --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.site-header {
+    margin-bottom: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+/* Katalog Grid Dasar: 1 Kolom */
+.catalog {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    min-width: 0; /* Mencegah elemen grid meluber (overflow) */
+}
+
+/* Formulir Responsif */
+input, select, textarea {
+    max-width: 50%;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* --- Media Query untuk Layar Lebih Besar (Breakpoint Konten) --- */
+@media (min-width: 48rem) { /* Kurang lebih 768px jika root 16px */
+    .catalog {
+        grid-template-columns: repeat(2, 1fr); /* Berubah menjadi 2 kolom */
+    }
+}

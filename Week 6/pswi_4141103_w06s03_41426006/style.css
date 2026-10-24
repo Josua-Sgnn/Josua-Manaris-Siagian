@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    /* Reset Box Sizing */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+}
+
+.nav-list {
+    /* Navigasi Fleksibel */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.cards {
+    /* Card Fleksibel */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 1 15rem;
+    padding: 1rem;
+    border: 1px solid #ccd;
+    min-width: 320px;
+    border-radius: 0.875rem;
+    background-color: aliceblue;
+}
+
+.card h2,
+/* Penanganan Konten Teks Panjang */
+.card p {
+    margin: 1px;
+    overflow-wrap: anywhere;
+    color: rgb(0, 0, 0);
+}
+
+.catalog {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 45rem) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Accessibility Focus */
+a:focus-visible {
+    outline: 0px solid 0;
+}
+
+.card a {
+    align-self: start;
+    /* Mencegah link meregang penuh */
+    text-decoration: none;
+    background-color: #0a73ea;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    transition: background-color 0.2s ease;
+}
+
+.card a:hover {
+    background-color: #6890b5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem);
+}
+
+.card-wrap {
+    container-type: inline-size;
+}
+
+@container (min-width: 30rem) {
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+}

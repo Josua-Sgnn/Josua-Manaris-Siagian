@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jadwal dan daftar kegiatan Komunitas Web Mahasiswa.">
+    <title>Komunitas Web Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kegiatan Komunitas</h1>
+        <nav aria-label="Navigasi utama">
+            <ul class="nav-list">
+                <li><a href="index.html">Beranda</a> |</li>
+                <li><a href="kegiatan.html" aria-current="page">Kegiatan</a> |</li>
+                <li><a href="kontak.html">Kontak</a> |</li>
+                <li><a href="catalog.html">Katalog</a> |</li>
+                <li><a href="daftar.html">Daftar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="catalog" class="catalog-section">
+            <h2>Daftar Produk</h2>
+            <div class="catalog">
+                <article class="card">
+                    <h3>Produk 1</h3>
+                    <p>Deskripsi singkat mengenai produk pertama yang responsif.</p>
+                    <img src="Bukti/Brain-640.jpg" alt="HTML" width="200" height="150">
+                </article>
+
+                <article class="card">
+                    <h3>Produk 2</h3>
+                    <p>Deskripsi singkat mengenai produk kedua yang responsif.</p>
+                    <img src="Bukti/Cloud.jpg" alt="HTML" width="200" height="150">
+
+                </article>
+
+                <article class="card">
+                    <h3>Produk 3</h3>
+                    <p>Deskripsi singkat mengenai produk ketiga yang responsif.</p>
+                    <img src="Bukti/Laptop.jpg" alt="HTML" width="200" height="150">
+
+                </article>
+
+                <article class="card">
+                    <h3>Produk 4 </h3>
+                    <p>Deskripsi singkat mengenai produk ketiga yang responsif.</p>
+                    <img src="Bukti/WEB.jpg" alt="HTML" width="200" height="150">
+
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" class="form-section">
+            <h2>Formulir Kontak</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+body {
+
+    /* Mengatur tampilan daftar navigasi */
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+    }
+
+    /* Mengatur tampilan daftar navigasi */
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    /* Mengatur tampilan setiap kartu */
+    .card {
+        flex: 1 1 15rem;
+        padding: 1rem;
+        border: 1px solid #ccd;
+        min-width: 0;
+
+        .card h2 {
+            overflow-wrap: anywhere;
+            /* Memotong teks panjang agar tidak keluar */
+        }
+
+    }
+
+    .catalog {
+        grid-template-columns:
+            repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    }
+}

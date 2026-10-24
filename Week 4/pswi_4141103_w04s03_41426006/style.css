@@ -1,0 +1,100 @@
+/* Mengatur tampilan utama pada seluruh halaman */
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: #e9eef5;
+}
+/* Mengatur ukuran dan tampilan kotak utama */
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #999;
+}
+/* Mengatur tampilan judul utama */
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 10px;
+}
+/* Mengatur warna tulisan pada paragraf */
+p {
+    color: #555;
+}
+/* Mengatur jarak bagian form dari bagian sebelumnya */
+form {
+    margin-top: 20px;
+}
+/* Mengatur tampilan label pada form */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/* Mengatur tampilan kolom input, pilihan, dan textarea */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 15px;
+}
+/* Mengatur tampilan kolom saat sedang dipilih atau diklik */
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #333;
+    outline: none;
+}
+/* Mengatur tampilan kotak pilihan pada form */
+fieldset {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+/* Mengatur ketebalan tulisan pada judul fieldset */
+legend {
+    font-weight: bold;
+}
+/* Mengatur ukuran input di dalam fieldset */
+fieldset input {
+    width: auto;
+}
+/* Mengatur posisi dan tampilan label di dalam fieldset */
+fieldset label {
+    display: inline;
+    margin-right: 15px;
+    font-weight: normal;
+}
+/* Mengatur ukuran, warna, dan jarak teks bantuan pada form */
+#kode-help {
+    font-size: 13px;
+    color: #777;
+    margin-top: 0;
+}
+/* Mengatur tampilan tombol pada form */
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Mengatur tampilan tombol ketika kursor diarahkan ke tombol */
+button:hover {
+    background-color: #444;
+}
